@@ -1,5 +1,14 @@
 {
+<<<<<<< HEAD
+	"dependencies": {
+		"express": "^4.18.1"
+	},
+	"scripts": {
+		"build": "node index.js"
+	}
+=======
   "name": "personal",
   "private": true,
   "version": "0.0.0"
+>>>>>>> 6b6e84bcbc9bc2013af45c6ab89a7bbfcfcda629
 }
