@@ -1,0 +1,19 @@
+[
+	{
+		"lang": "ts",
+		"name": "Normal",
+		"description": {
+			"en": "A multipurpose and simple Discord verified bot",
+			"es": "Un bot de Discord verificado sencillo y multipropósito"
+		},
+		"github": "normal-project/Normal"
+	},
+	{
+		"lang": "ts",
+		"name": "The Frog",
+		"description": {
+			"en": "I will not reveal nothing. In development...",
+			"es": "No desvelaré nada. En desarrollo..."
+		}
+	}
+]
