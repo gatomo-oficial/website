@@ -1,7 +1,6 @@
-# website
-🐈‍⬛ My personal website created with React and Tailwind CSS
+# [Gátomo's Website](https://gatomo.ga/)
+🐈‍⬛ My personal website created with React and Tailwind CSS.
 
-> If you want to use it, mention me as creator of webpage, don't be thief
+> If you want to use it, mention me as creator of the webpage, don't be a thief.
 
 I hope you like it 😁
-
