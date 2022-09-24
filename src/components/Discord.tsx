@@ -122,9 +122,7 @@ const Discord = () => {
 							</div>
 							<p className='song'>{data.spotify?.song}</p>
 							<p className='artist'>
-								{`${data.spotify?.artist} - ${data.spotify?.album}`.length > 37
-									? `${data.spotify?.artist} - ${data.spotify?.album}`.substring(0, 37) + '...'
-									: `${data.spotify?.artist} - ${data.spotify?.album}`}
+								{`${data.spotify?.artist} - ${data.spotify?.album}`}
 							</p>
 						</div>
 					</div>
