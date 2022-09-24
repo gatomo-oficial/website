@@ -8,6 +8,15 @@
 		},
 		"github": "normal-project/Normal"
 	},
+	,
+	{
+		"lang": "ts",
+		"name": "Minimalist Newtab",
+		"description": {
+			"en": "A minimalist, clean and customizable new tab page. Coming soon on GitHub",
+			"es": "Una página de nueva pestaña minimalista, limpia y personalziable. Próximamente en GitHub"
+		}
+	},
 	{
 		"lang": "ts",
 		"name": "The Frog",
@@ -16,4 +25,5 @@
 			"es": "No desvelaré nada. En desarrollo..."
 		}
 	}
+	
 ]
