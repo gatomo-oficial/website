@@ -1,5 +1,13 @@
 [
 	{
+		"lang": "ts",
+		"name": "Normal",
+		"description": {
+			"en": "A multipurpose and simple Discord verified bot. Discontinued",
+			"es": "Un bot de Discord verificado sencillo y multipropósito. Descontinuado"
+		}
+	},
+	{
 		"lang": "js",
 		"name": "Time to sleep",
 		"description": {

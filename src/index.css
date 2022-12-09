@@ -7,27 +7,23 @@
 	src: url('./assets/pacifico.ttf');
 }
 
+@font-face {
+	font-family: 'jetbrains';
+	src: url('./assets/jetbrains.ttf');
+}
+
 @layer base {
-	.app {
-		@apply flex flex-col
-        w-full h-screen
-		bg-cover bg-bottom bg-no-repeat
-		select-none;
-	}
-
-	/*////////////////////////////////////////////////////////////////////////////*/
-
 	.tooltip {
 		.items {
 			.container {
-				@apply rounded-md bg-slate-800 flex items-center justify-center text-slate-200 font-semibold px-6 py-1.5 text-center;
+				@apply rounded-md bg-slate-800 flex items-center justify-center text-slate-200 font-semibold px-6 pt-2 pb-1.5 text-center shadow-lg font-jetbrains;
 			}
 			.arrow {
-				@apply w-4 h-4 border-solid border-t-slate-800 border-t-8 border-x-transparent border-x-8 border-b-0;
+				@apply w-4 h-4 border-solid border-t-slate-800 border-t-8 border-x-transparent border-x-8 border-b-0 drop-shadow-lg;
 			}
 			@apply flex flex-col items-center justify-center;
 		}
-		@apply opacity-0 absolute -translate-y-14;
+		@apply opacity-0 invisible absolute -translate-y-16 blur-sm ease-in-out duration-200;
 	}
 
 	.has-tooltip {
@@ -35,336 +31,30 @@
 	}
 
 	.has-tooltip:hover .tooltip {
-		@apply opacity-100;
+		@apply visible opacity-100 -translate-y-14 blur-none select-none;
 	}
 
 	/*////////////////////////////////////////////////////////////////////////////*/
 
-	.animate {
-		@apply ease-in-out duration-200;
+	.ts {
+		@apply bg-[#3178C6] text-slate-50;
 	}
-
-	.loading {
-		@apply bg-slate-300 opacity-80 animate-pulse w-32 h-32 rounded-full hover:shadow-lg hover:-translate-y-1 active:translate-y-0;
+	.js {
+		@apply bg-[#F7DF1E] text-slate-900;
 	}
-
-	/*/ ///////////////////////////////////////////////////////////////////////////*/
-
-	.card-bg {
-		@apply backdrop-filter backdrop-blur-md
-		rounded-lg
-		bg-opacity-40
-		bg-slate-100
-		hover:bg-opacity-50
-		animate;
+	.py {
+		@apply bg-[#3776AB] text-slate-50;
 	}
-
-	.main {
-		.card-row {
-			@apply xl:flex xl:space-x-6 xl:space-y-0 space-y-6;
-		}
-
-		.header-footer {
-			.title-header {
-				@apply text-slate-800  font-pacifico text-4xl;
-			}
-
-			.title-footer {
-				@apply text-slate-800 text-lg;
-			}
-
-			.links {
-				.link {
-					@apply w-8 sm:w-12 h-8 sm:h-12 fill-slate-800 hover:fill-slate-700 active:fill-slate-900;
-				}
-				.link-text {
-					@apply text-slate-800 hover:text-slate-700 active:text-slate-900 animate;
-				}
-				@apply flex space-x-2 sm:space-x-4 justify-end;
-			}
-
-			@apply flex items-center justify-between
-			pl-10 sm:pr-10 py-6 pr-4;
-		}
-
-		.general {
-			.hi {
-				@apply text-2xl text-slate-900 mb-4;
-			}
-
-			@apply flex flex-col;
-
-			@apply flex
-			px-10 py-6;
-		}
-
-		.about-me {
-			.title {
-				@apply font-bold text-slate-900 text-xl;
-			}
-			.list {
-				.item {
-					.icon {
-						@apply fill-slate-800 hover:fill-slate-700 w-7 h-7;
-					}
-					@apply flex space-x-2 items-center justify-start;
-				}
-				@apply flex flex-col space-y-3;
-			}
-			@apply flex flex-col px-10 py-6 space-y-4 flex-grow;
-		}
-
-		.discord {
-			.title {
-				@apply font-bold text-slate-900 text-xl;
-			}
-			.content {
-				.container-one {
-					.avatar {
-						@apply w-32 h-32 rounded-full hover:shadow-lg hover:-translate-y-1 active:translate-y-0;
-					}
-
-					.info {
-						.username {
-							.name {
-								@apply text-slate-800 font-bold;
-							}
-							.discriminator {
-								@apply text-slate-600 font-medium mr-4;
-							}
-
-							.icon-container {
-								.icon {
-									@apply w-8 h-8 fill-slate-800 hover:fill-slate-700;
-								}
-								@apply flex flex-row space-x-4;
-							}
-
-							@apply flex flex-row text-xl;
-						}
-
-						.status {
-							@apply flex flex-row space-x-2 align-middle;
-						}
-
-						.server {
-							.icon {
-								@apply w-8 h-8 fill-slate-800 hover:fill-slate-700;
-							}
-							.text {
-								@apply text-slate-800  hover:text-slate-700 active:text-slate-900 animate font-bold;
-							}
-							@apply flex flex-row space-x-2 mt-2 items-center;
-						}
-
-						.icon-online {
-							@apply w-6 h-6 fill-emerald-700 hover:fill-emerald-600;
-						}
-						.icon-idle {
-							@apply w-6 h-6 fill-amber-700 hover:fill-amber-600;
-						}
-						.icon-dnd {
-							@apply w-6 h-6 fill-rose-700 hover:fill-rose-600;
-						}
-						.icon-offline {
-							@apply w-6 h-6 fill-slate-700 hover:fill-slate-600;
-						}
-
-						.text-online {
-							@apply font-bold text-emerald-700;
-						}
-						.text-idle {
-							@apply font-bold text-amber-700;
-						}
-						.text-dnd {
-							@apply font-bold text-rose-700;
-						}
-						.text-offline {
-							@apply font-bold text-slate-700;
-						}
-
-						@apply flex flex-col;
-					}
-
-					@apply flex sm:flex-row flex-col sm:justify-start justify-center sm:space-y-0 space-y-4 space-x-10 sm:mx-5 mb-5;
-				}
-
-				.spotify {
-					.art {
-						@apply rounded-lg w-32 h-32 hover:shadow-lg hover:-translate-y-1 active:translate-y-0;
-					}
-
-					.title-icon {
-						.title {
-							@apply font-bold text-slate-900 text-xl;
-						}
-
-						.icon {
-							@apply w-8 h-8 fill-slate-800 hover:fill-slate-700;
-						}
-						@apply flex flex-row space-x-2 items-center;
-					}
-
-					.container-two {
-						.title {
-							@apply text-slate-900 font-bold;
-						}
-						.song {
-							@apply font-semibold text-slate-800;
-						}
-
-						.artist {
-							@apply font-medium text-slate-700;
-						}
-						@apply flex flex-col space-y-2;
-					}
-					@apply flex sm:flex-row flex-col sm:justify-start justify-center sm:space-y-0 space-y-4 space-x-10 sm:mx-5 mb-5;
-				}
-
-				.code {
-					.title-icon {
-						.title {
-							@apply font-bold text-slate-900 text-xl;
-						}
-
-						.icon {
-							@apply w-8 h-8 fill-slate-800 hover:fill-slate-700;
-						}
-						@apply flex flex-row space-x-2 items-center;
-					}
-
-					.lang {
-						@apply rounded-lg w-32 h-32 hover:shadow-lg hover:-translate-y-1 active:translate-y-0;
-					}
-
-					.container-three {
-						.bold {
-							@apply text-slate-900 font-bold;
-						}
-						.text {
-							@apply font-medium text-slate-800;
-						}
-
-						@apply flex flex-col space-y-2;
-					}
-					@apply flex sm:flex-row flex-col sm:justify-start justify-center sm:space-y-0 space-y-4 space-x-10 sm:mx-5 mb-5;
-				}
-
-				@apply flex flex-row flex-wrap align-top sm:justify-between justify-center;
-			}
-
-			@apply flex flex-col flex-wrap flex-grow px-10 py-6 space-y-4;
-		}
-
-		.projects {
-			.title {
-				@apply font-bold text-slate-900 text-xl;
-			}
-			.section {
-				.title {
-					@apply font-semibold text-slate-800 text-lg;
-				}
-
-				.projects {
-					@apply flex flex-col space-y-5 px-0;
-				}
-
-				.projects-row {
-					@apply flex flex-wrap flex-row px-0;
-				}
-
-				@apply flex flex-col space-y-4;
-			}
-
-			@apply flex flex-col px-10 py-6 space-y-4 first:mt-0;
-		}
-		.project-card {
-			.container-one {
-				.lang {
-					@apply flex items-center justify-center w-14 h-14 rounded-md font-bold text-xl hover:shadow-lg hover:-translate-y-1 active:translate-y-0;
-				}
-				.ts {
-					@apply bg-[#3178C6] text-slate-50;
-				}
-				.js {
-					@apply bg-[#F7DF1E] text-slate-900;
-				}
-				.py {
-					@apply bg-[#3776AB] text-slate-50;
-				}
-				.c {
-					@apply bg-[#A8B9CC] text-slate-900;
-				}
-				.sh {
-					@apply bg-[#4EAA25] text-slate-50;
-				}
-				.java {
-					@apply bg-[#F78C40] text-slate-50;
-				}
-
-				.title {
-					.name {
-						@apply text-slate-800 font-bold;
-					}
-					.description {
-						@apply text-slate-600 font-medium mr-4;
-					}
-					@apply flex flex-col space-y-2;
-				}
-				@apply flex sm:flex-row flex-col sm:space-y-0 space-y-2 space-x-4 items-center justify-start;
-			}
-
-			.container-two {
-				.icons {
-					.link {
-						.icon {
-							@apply w-10 h-10 fill-slate-800 hover:fill-slate-700 active:fill-slate-900;
-						}
-						@apply ml-4;
-					}
-
-					@apply flex sm:flex-row flex-col justify-end items-center;
-				}
-				@apply flex sm:flex-row flex-col align-middle;
-			}
-
-			@apply flex sm:flex-row flex-col items-center justify-between
-			rounded-lg
-			px-6 py-4
-			bg-slate-50 bg-opacity-30
-			hover:bg-opacity-50 hover:shadow-lg;
-		}
-
-		.project-card-sm {
-			@apply w-full 2xl:w-max 2xl:mx-4 my-2;
-		}
-
-		.opinion {
-			.quote {
-				@apply fill-slate-800 hover:fill-slate-700 w-16 h-16;
-			}
-			.container {
-				.text {
-					@apply text-lg text-slate-800;
-				}
-				.user {
-					.avatar {
-						@apply rounded-full bg-white w-8 h-8 hover:shadow-lg hover:-translate-y-1 active:translate-y-0;
-					}
-					.name {
-						@apply text-slate-800 font-bold;
-					}
-					.about {
-						@apply text-slate-700 font-medium mr-4;
-					}
-					@apply flex flex-wrap space-x-4 items-center;
-				}
-				@apply flex flex-col space-y-3;
-			}
-			@apply flex px-10 py-6 w-full space-x-4 items-start;
-		}
-
-		@apply w-full h-screen
-		flex flex-col space-y-6 sm:px-10 px-2 py-6 overflow-y-auto text-neutral-900 font-medium;
+	.c {
+		@apply bg-[#A8B9CC] text-slate-900;
+	}
+	.sh {
+		@apply bg-[#4EAA25] text-slate-50;
+	}
+	.java {
+		@apply bg-[#F78C40] text-slate-50;
+	}
+	.rs {
+		@apply bg-[#eb673e] text-slate-50;
 	}
 }

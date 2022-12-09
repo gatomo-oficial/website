@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				pacifico: ['Pacifico', 'cursive']
+				pacifico: ['Pacifico', 'cursive'],
+				jetbrains: ['JetBrains Mono', 'cursive']
 			}
 		}
 	},

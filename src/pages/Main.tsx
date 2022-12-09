@@ -1,26 +1,25 @@
-import AboutMe from '../components/AboutMe';
-import Discord from '../components/Discord';
-import General from '../components/General';
+import AboutMe from '../components/main/AboutMe';
+import Discord from '../components/main/Discord';
+import General from '../components/main/general/General';
 import Header from '../components/Header';
-import Projects from '../components/projects/Projects';
-import Opinion from '../components/Opinion';
-
-import ops from '../assets/opinion.json';
+import Projects from '../components/main/projects/Projects';
+import Opinions from '../components/main/Opinions';
 import Footer from '../components/Footer';
 
 export const Main = () => {
-	const opinions = ops.map((e) => <Opinion avatar={e.avatar} user={e.user} en={e.en} es={e.es} />);
-
 	return (
-		<div className='main'>
-			<Header />
+		<div
+			className='w-full h-screen
+		flex flex-col space-y-6
+		'
+		>
 			<General />
-			<div className='card-row'>
+			<div className='xl:flex xl:space-x-6 xl:space-y-0 space-y-6'>
 				<AboutMe />
 				<Discord />
 			</div>
 			<Projects />
-			{opinions}
+			<Opinions />
 			<Footer />
 		</div>
 	);

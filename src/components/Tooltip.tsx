@@ -7,13 +7,21 @@ import React from 'react';
 ></div> */
 }
 
-const Tooltip = ({ text, children }: { text: string; children: JSX.Element }) => {
+const Tooltip = ({
+	text,
+	textClassName,
+	children
+}: {
+	text: string;
+	textClassName?: string;
+	children: JSX.Element;
+}) => {
 	return (
 		<div className='has-tooltip'>
 			{children}
-			<div className='tooltip animate'>
+			<div className='tooltip'>
 				<div className='items'>
-					<div className='container'>{text}</div>
+					<div className={`container ${textClassName}`}>{text}</div>
 					<div className='arrow'></div>
 				</div>
 			</div>

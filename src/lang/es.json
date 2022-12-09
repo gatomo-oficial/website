@@ -1,16 +1,28 @@
 {
+	"notfound_text": "¡Vaya! Parece que te has perdido.",
+
+	"coming_soon_title": "En desarrollo",
+	"coming_soon_desc": "La página está en desarrollo. Pronto estará listo.",
+
+	"return": "Volver al inicio",
+
+	"header_courses": "Cursos",
+
 	"general_hi": "Hola, soy",
-	"general_description": "Soy un estudiante de informática español. Me gusta programar en mis tiempos libres.",
-	"general_langs": "Uso principalmente TypeScript y tengo conocimientos básicos de Python, Java, Lua y C.",
+	"general_description": "Soy un estudiante de 17 años de informática español. Me gusta programar en mis tiempos libres.",
+	"general_tech_title": "Tecnologías",
+	"general_tech_lang": "Lenguajes",
+	"general_tech_lib": "Frameworks y librerías",
+	"general_tech_editors": "Editores",
+	"general_tech_os": "Sistemas",
+	"general_tech_other": "Otras tecnologías",
 
 	"about_title": "Sobre mí",
 	"about_location": "Aragón, España",
 	"about_study": "Estudiando un grado medio de informática",
-	"about_social": "Soy muy activo en Discord",
+	"about_social": "Suelo hablar en Discord y Revolt",
 	"about_serie1": "Series favoritas",
-	"about_serie2": "Amphibia y Los Simpsons",
-	"about_os1": "Sistema Operativo",
-	"about_os2": "Manjaro Linux",
+	"about_serie2": "Me gusta Amphibia y Los Simpsons",
 
 	"discord_loading": "Cargando...",
 	"discord_online": "Online",
@@ -19,6 +31,7 @@
 	"discord_offline": "Offline",
 	"discord_pc": "En ordenador",
 	"discord_phone": "En móvil",
+	"discord_web": "En web",
 	"discord_server": "Servidor de Discord",
 	"discord_spotify_title": "Escuchando Spotify",
 	"discord_spotify_listen": "Escuchar en Spotify",
@@ -30,6 +43,6 @@
 
 	"projects_title": "Proyectos",
 	"projects_description": "Estos son mis proyectos más destacables. No son muchos ni son grandiosidades, pero con ellos he aprendido mucho.",
-	"projects_working": "Actualmente trabajando",
+	"projects_working": "Últimos proyectos",
 	"projects_others": "Otros proyectos"
 }

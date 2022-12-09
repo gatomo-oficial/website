@@ -1,28 +1,20 @@
 [
 	{
 		"lang": "ts",
-		"name": "Normal",
+		"name": "Normal Revolt",
 		"description": {
-			"en": "A multipurpose and simple Discord verified bot",
-			"es": "Un bot de Discord verificado sencillo y multipropósito"
+			"en": "A multipurpose and simple Revolt bot",
+			"es": "Un bot de Revolt sencillo y multipropósito"
+		}
+	},
+	{
+		"lang": "rs",
+		"name": "Path trav",
+		"description": {
+			"en": "A simple path traversal checker made with Rust. Useful for APIs that serve dynamic files",
+			"es": "Un comprobador de path traversal hecho en Rust. Útil para APIs que sirven archivos dinámicos"
 		},
-		"github": "normal-project/Normal"
-	},
-	{
-		"lang": "ts",
-		"name": "Minimalist Newtab",
-		"description": {
-			"en": "A minimalist, clean and customizable new tab page. Coming soon on GitHub...",
-			"es": "Una página de nueva pestaña minimalista, limpia y personalizable. Próximamente en GitHub..."
-		}
-	},
-	{
-		"lang": "ts",
-		"name": "The Frog",
-		"description": {
-			"en": "I will not reveal nothing. In development...",
-			"es": "No desvelaré nada. En desarrollo..."
-		}
+		"github": "gatomo-oficial/path_trav",
+		"web": "https://docs.rs/path_trav/1.0.1"
 	}
-	
 ]
