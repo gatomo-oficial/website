@@ -36,10 +36,9 @@ const Opinion = ({ user, en, es, avatar }: OpinionType) => {
 		items-start
 		'
 		>
-			<div className='w-2/12'>
-				<Quote className='fill-slate-800 hover:fill-slate-700 w-16 h-16 max-w-full ease-in-out duration-200' />
-			</div>
-			<div className='w-10/12 flex flex-col items-start justify-between space-y-3'>
+			<Quote className='fill-slate-800 hover:fill-slate-700 w-16 h-16 max-w-full ease-in-out duration-200' />
+
+			<div className='w-full flex flex-col items-start justify-between space-y-3'>
 				<p className='text-lg text-slate-800'>{text.opinion}</p>
 				<div className='flex space-x-4 items-center'>
 					<img
