@@ -1,25 +1,25 @@
 {
-	"notfound_text": "Uh, oh! It looks that you're lost.",
+	"notfound_text": "Uh, oh! It looks like you're lost.",
 
 	"coming_soon_title": "In development",
-	"coming_soon_desc": "This page is still in development. It will be ready coming soon.",
+	"coming_soon_desc": "This page is still in development. It will be ready very soon.",
 
-	"return": "Return to homepage",
+	"return": "Return home",
 
 	"header_courses": "Courses",
 
 	"general_hi": "Hi! I'm",
-	"general_description": "I'm a 17 y/o Spanish computer student. I like to program in my free time.",
-	"general_tech_title": "Technologies",
+	"general_description": "I'm a 17 y/o computing student from Spain. I like to program in my free time.",
+	"general_tech_title": "Tecnologies",
 	"general_tech_lang": "Languages",
-	"general_tech_lib": "Frameworks and libraries",
+	"general_tech_lib": "Frameworks and Libraries",
 	"general_tech_editors": "Editors",
 	"general_tech_os": "Systems",
 	"general_tech_other": "Other technologies",
 
 	"about_title": "About me",
 	"about_location": "Aragon, Spain",
-	"about_study": "Studying computing middle degree",
+	"about_study": "Studying a computing middle degree",
 	"about_social": "I usually talk in Discord and Revolt",
 	"about_serie1": "Favorites series",
 	"about_serie2": "I like Amphibia and The Simpsons",
@@ -42,7 +42,7 @@
 	"discord_code_idle_nothing": "Nothing",
 
 	"projects_title": "Projects",
-	"projects_description": "These are my most prominent projects. They are not great, but with them I have learned a lot.",
+	"projects_description": "These are my most outstanding projects. They are not great, but with them I have learned a lot.",
 	"projects_working": "Last projects",
 	"projects_others": "Other projects"
 }
